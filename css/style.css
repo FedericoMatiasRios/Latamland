@@ -82,7 +82,7 @@ ul li {
     top: 0;
     left: 0;
     z-index: -1;
-    background-image: url(../img/web-latamland-modificado-03.png);
+    background-image: url(../img/web-latamland-modificado-03.webp);
     height: 100vw;
     background-size: contain;
     background-repeat: no-repeat;
@@ -94,7 +94,7 @@ ul li {
     top: 10vw;
     left: -20px;
     z-index: -3;
-    background-image: url(../img/web-latamland-modificado-06.png);
+    background-image: url(../img/web-latamland-modificado-06.webp);
     height: 100vw;
     background-size: contain;
     background-repeat: no-repeat;
@@ -106,7 +106,7 @@ ul li {
     top: 12vw;
     left: 62vw;
     z-index: -1;
-    background-image: url(../img/web-latamland-modificado-07.png);
+    background-image: url(../img/web-latamland-modificado-07.webp);
     height: 100vw;
     background-size: contain;
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@ ul li {
     top: 20vw;
     left: 0;
     z-index: -1;
-    background-image: url(../img/web-latamland-modificado-04.png);
+    background-image: url(../img/web-latamland-modificado-04.webp);
     height: 100vw;
     background-size: contain;
     background-repeat: no-repeat;
@@ -130,7 +130,7 @@ ul li {
     top: 40vw;
     left: 0;
     z-index: -2;
-    background-image: url(../img/web-latamland-modificado-02.png);
+    background-image: url(../img/web-latamland-modificado-02.webp);
     height: 100vw;
     background-size: contain;
     background-repeat: no-repeat;
@@ -142,8 +142,8 @@ ul li {
     top: 95vw;
     left: 0;
     z-index: -4;
-    background-image: url(../img/web-latamland-modificado-05.png);
-    height: 100vw;
+    background-image: url(../img/web-latamland-modificado-05.webp);
+    height: 54vw;
     background-size: contain;
     background-repeat: no-repeat;
     margin: -5px 0 0 0;
