@@ -480,6 +480,9 @@ footer a {
         margin-bottom: 30px;
     }
     main {
+        height: unset;
+    }
+    body {
         height: 100vh;
     }
 }
