@@ -13,7 +13,6 @@ body {
     background-repeat: no-repeat;
 }
 
-
 nav {
     display: flex;
     align-items: center;
@@ -402,6 +401,7 @@ footer a {
     .contenedorTexto {
         zoom: 0.8;
     }
+
     footer {
         margin-top: 24vw;
     }
@@ -420,6 +420,7 @@ footer a {
     footer {
         font-size: 2vw;
     }
+
     #menu {
         display: none;
         flex-direction: column;
@@ -483,9 +484,11 @@ footer a {
     #menu {
         display: flex !important;
     }
+
     main {
         height: 125.5vw;
     }
+
     footer {
         font-size: 2vw;
     }
