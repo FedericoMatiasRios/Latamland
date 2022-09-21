@@ -428,7 +428,7 @@ footer a {
         position: absolute;
         top: 28vw;
         background-color: #1593b3;
-        height: calc(var(--vh, 1vh) * 100);
+        height: calc((var(--vh, 1vh) * 100) - 100px);
         text-align: center;
         z-index: 1;
     }
