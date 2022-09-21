@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>LatamLand</title>
 </head>
+
 <body>
     <div id="backgounds">
         <div id="bgTopLeft"></div>
@@ -24,21 +26,31 @@
         <nav>
             <img id="logo" src="./img/Logo.webp" alt="Latamland">
             <div id="menu">
-            <ul>
-                <li id="liActive">¿Qué es LatamLand?</li>
-                <li>Mapa</li>
-                <li>Mis terrenos</li>
-                <li>Donde comprar?</li>
-            </ul>
-            <div id="liMetaMask">CONECTAR <br> METAMASK</div>
+                <ul>
+                    <a href="#">
+                        <li id="liActive">¿Qué es LatamLand?</li>
+                    </a>
+                    <a href="#">
+                        <li>Mapa</li>
+                    </a>
+                    <a href="#">
+                        <li>Mis terrenos</li>
+                    </a>
+                    <a href="#">
+                        <li>Donde comprar?</li>
+                    </a>
+                </ul>
+                <div id="liMetaMask">CONECTAR <br> METAMASK</div>
             </div>
-            <div id="hamburguer"><i class="fa-solid fa-bars"></i></div>
+            <div id="hamburguer" onclick="MostrarOcultar();"><i class="fa-solid fa-bars"></i></div>
         </nav>
     </header>
     <main>
         <div class="contenedorTexto">
             <h1 class="titulo">¿Qué es LatamLand?</h1>
-            <h2 class="parrafo">Somos el primer metaverso de latinoamerica en utilizar mapas de ciudades reales. En LatamLand los usuarios pueden interactuar entre ellos, comprar/vender terrenos NFTS, construir propiedades y obtener una renta pasiva por el alquiler de las mismas!</h2>
+            <h2 class="parrafo">Somos el primer metaverso de latinoamerica en utilizar mapas de ciudades reales. En
+                LatamLand los usuarios pueden interactuar entre ellos, comprar/vender terrenos NFTS, construir
+                propiedades y obtener una renta pasiva por el alquiler de las mismas!</h2>
         </div>
         <div class="contenedorVideo">
             <iframe id="video" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
@@ -55,5 +67,19 @@
             Copyright: LATAMLAND. Todos los derechos reservados.
         </h3>
     </footer>
+    <script>
+        //Condicional Menú Hamburguesa
+        let x = 0;
+        function MostrarOcultar() {
+            if (x == 0) {
+                x = 1;
+                document.getElementById('menu').style.display = 'flex';
+            } else {
+                x = 0;
+                document.getElementById('menu').style.display = 'none';
+            }
+        }
+    </script>
 </body>
+
 </html>

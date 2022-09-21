@@ -4,10 +4,12 @@
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
+
 body {
     background-color: #1593b3;
     overflow-x: hidden;
 }
+
 nav {
     display: flex;
     align-items: center;
@@ -15,15 +17,23 @@ nav {
     font-weight: 600;
     margin-top: -23px;
 }
+
 #logo {
     width: 23em;
     cursor: pointer;
 }
+
 ul {
     display: flex;
     justify-content: right;
     height: 100%;
 }
+
+ul a {
+    text-decoration: none;
+    color: #276d72;
+}
+
 ul li {
     padding: 0.5em 1.5em;
     margin: 0 0.5em;
@@ -33,6 +43,13 @@ ul li {
     color: #276d72;
     cursor: pointer;
 }
+
+ul li:hover,
+ul li:hover a {
+    background-color: #a6cd42;
+    color: #fff;
+}
+
 #menu {
     display: flex;
     justify-content: right;
@@ -40,21 +57,26 @@ ul li {
     width: 100%;
     margin-right: 2.5em;
 }
+
 #hamburguer {
     display: none;
     margin-right: 2.5em;
     padding: 0.5em 1.5em;
     list-style-type: none;
-    background-color: #fff;
-    border-radius: 2em;
-    color: #276d72;
+    color: #1593b3;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 5vw;
+    position: absolute;
+    top: 5px;
+    left: 0;
 }
-#liActive {
-    color: #fff;
+
+#liActive,
+#liActive a {
+    color: #fff !important;
     background-color: #a6cd42;
 }
+
 #liMetaMask {
     padding: 0.5em 1.5em;
     margin: 0 0.5em;
@@ -64,18 +86,22 @@ ul li {
     background-color: #05565b;
     font-weight: 700;
 }
+
 .titulo {
     color: #fff;
     text-align: center;
     text-transform: uppercase;
 }
+
 .parrafo {
     color: #fff;
     text-align: center;
 }
+
 #social {
     font-size: 6vw;
 }
+
 /* Background Images */
 #bgTopLeft {
     width: 100vw;
@@ -88,6 +114,7 @@ ul li {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
 #bgEdificio1 {
     width: 37vw;
     position: absolute;
@@ -99,6 +126,7 @@ ul li {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
 #bgEdificio2 {
     width: 37vw;
     position: absolute;
@@ -110,6 +138,7 @@ ul li {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
 #bgCenter1 {
     width: 100vw;
     position: absolute;
@@ -121,6 +150,7 @@ ul li {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
 #bgCenter2 {
     width: 100vw;
     position: absolute;
@@ -132,6 +162,7 @@ ul li {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
 #bgBottom {
     width: 100vw;
     position: absolute;
@@ -143,186 +174,472 @@ ul li {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
 h1 {
     font-size: 36px;
     font-weight: 700;
     width: 60%;
     margin: 0 auto;
 }
+
 h2 {
     margin-top: 10px;
     font-size: 16px;
     font-weight: 300;
 }
+
 h3 {
     margin-top: 15vw;
 }
+
 .contenedorTexto {
     width: 450px;
     margin: 0 auto;
 }
+
 .contenedorVideo {
     width: 45vw;
     margin: 0 auto;
     margin-top: 30vw;
 }
+
 #video {
     width: 100%;
     height: 30vw;
 }
+
 footer {
     margin-top: 20vw;
 }
+
 footer i {
     padding: 0 0.3em;
     cursor: pointer;
 }
+
 footer a {
     color: #fff;
     text-decoration: none;
 }
+
 /* Media Queries */
-@media only screen and (max-width: 750px) {
-    .contenedorTexto {
-        margin-top: 6vw;
-    }
+@media only screen and (min-width: 300px) and (max-width: 320px) {
     .contenedorVideo {
-        margin-top: 19vw;
+        margin-top: 34.5vw;
     }
-    footer {
-        margin-top: 27vw;
+
+    .contenedorTexto {
+        zoom: 0.45;
     }
 }
+
+@media only screen and (min-width: 321px) and (max-width: 339px) {
+    .contenedorVideo {
+        margin-top: 36vw;
+    }
+
+    .contenedorTexto {
+        zoom: 0.45;
+    }
+}
+
+@media only screen and (min-width: 340px) and (max-width: 354px) {
+    .contenedorVideo {
+        margin-top: 30vw;
+    }
+
+    .contenedorTexto {
+        zoom: 0.6;
+    }
+}
+
+@media only screen and (min-width: 355px) and (max-width: 359px) {
+    .contenedorVideo {
+        margin-top: 31vw;
+    }
+
+    .contenedorTexto {
+        zoom: 0.6;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 384px) {
+    .contenedorVideo {
+        margin-top: 32vw;
+    }
+
+    .contenedorTexto {
+        zoom: 0.6;
+    }
+}
+
+@media only screen and (min-width: 385px) and (max-width: 395px) {
+    .contenedorVideo {
+        margin-top: 33vw;
+    }
+
+    .contenedorTexto {
+        zoom: 0.6;
+    }
+}
+
+@media only screen and (min-width: 396px) and (max-width: 413px) {
+    .contenedorVideo {
+        margin-top: 34vw;
+    }
+
+    .contenedorTexto {
+        zoom: 0.6;
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 445px) {
+    .contenedorVideo {
+        margin-top: 35vw;
+    }
+
+    .contenedorTexto {
+        zoom: 0.6;
+    }
+}
+
+@media only screen and (min-width: 446px) and (max-width: 465px) {
+    .contenedorVideo {
+        margin-top: 36vw;
+    }
+
+    .contenedorTexto {
+        zoom: 0.6;
+    }
+}
+
+@media only screen and (min-width: 466px) and (max-width: 485px) {
+    .contenedorVideo {
+        margin-top: 37vw;
+    }
+
+    .contenedorTexto {
+        zoom: 0.6;
+    }
+}
+
+@media only screen and (min-width: 486px) and (max-width: 510px) {
+    .contenedorVideo {
+        margin-top: 38vw;
+    }
+
+    .contenedorTexto {
+        zoom: 0.6;
+    }
+}
+
+@media only screen and (min-width: 511px) and (max-width: 530px) {
+    .contenedorVideo {
+        margin-top: 36vw;
+    }
+
+    .contenedorTexto {
+        zoom: 0.65;
+    }
+}
+
+@media only screen and (min-width: 531px) and (max-width: 555px) {
+    .contenedorVideo {
+        margin-top: 37vw;
+    }
+
+    .contenedorTexto {
+        zoom: 0.65;
+    }
+}
+
+@media only screen and (min-width: 556px) and (max-width: 610px) {
+    .contenedorVideo {
+        margin-top: 37.5vw;
+    }
+
+    .contenedorTexto {
+        zoom: 0.7;
+    }
+}
+
+@media only screen and (min-width: 611px) and (max-width: 650px) {
+    .contenedorVideo {
+        margin-top: 37.5vw;
+    }
+
+    .contenedorTexto {
+        zoom: 0.75;
+    }
+}
+
+@media only screen and (min-width: 651px) and (max-width: 700px) {
+    .contenedorVideo {
+        margin-top: 38vw;
+    }
+
+    .contenedorTexto {
+        zoom: 0.75;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 749px) {
+    .contenedorVideo {
+        margin-top: 38.5vw;
+    }
+
+    .contenedorTexto {
+        zoom: 0.8;
+    }
+}
+
+@media only screen and (max-width: 749px) {
+    .contenedorTexto {
+        margin-top: unset;
+    }
+
+    .contenedorTexto h2 {
+        text-shadow: 1px 1px #000000;
+        font-weight: 400;
+    }
+
+    footer {
+        margin-top: 15vw;
+        font-size: 2vw;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        margin-right: unset;
+        position: absolute;
+        top: 28vw;
+        background-color: #1593b3;
+        height: 120.5vw;
+        text-align: center;
+    }
+
+    #menu ul {
+        flex-direction: column;
+    }
+
+    #menu ul li {
+        margin: 0.2em 0.5em;
+    }
+
+    #logo {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #bgCenter1 {
+        top: 38vw;
+    }
+
+    #bgCenter2 {
+        top: 68vw;
+    }
+
+    #bgBottom {
+        top: 123vw;
+    }
+
+    #bgEdificio1 {
+        top: 40vw;
+    }
+
+    #bgEdificio2 {
+        top: 40vw;
+    }
+
+    footer {
+        margin-top: 26vw;
+    }
+
+    #hamburguer {
+        display: block;
+    }
+
+    nav {
+        flex-direction: column;
+        font-size: 5vw;
+    }
+
+    #liMetaMask {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    #menu {
+        display: flex !important;
+    }
+}
+
 @media only screen and (min-width: 750px) and (max-width: 784px) {
     .contenedorTexto {
         margin-top: 6vw;
     }
+
     .contenedorVideo {
         margin-top: 19vw;
     }
+
     footer {
         margin-top: 27vw;
     }
 }
+
 @media only screen and (min-width: 785px) and (max-width: 819px) {
     .contenedorTexto {
         margin-top: 6vw;
     }
+
     .contenedorVideo {
         margin-top: 20vw;
     }
+
     footer {
         margin-top: 27.5vw;
     }
 }
+
 @media only screen and (min-width: 820px) and (max-width: 859px) {
     .contenedorTexto {
         margin-top: 6vw;
     }
+
     .contenedorVideo {
         margin-top: 21vw;
     }
+
     footer {
         margin-top: 28vw;
     }
 }
+
 @media only screen and (min-width: 860px) and (max-width: 919px) {
     .contenedorTexto {
         margin-top: 6vw;
     }
+
     .contenedorVideo {
         margin-top: 22vw;
     }
+
     footer {
         margin-top: 27.5vw;
     }
 }
+
 @media only screen and (min-width: 920px) and (max-width: 1019px) {
     .contenedorTexto {
         margin-top: 6vw;
     }
+
     .contenedorVideo {
         margin-top: 23.8vw;
     }
+
     footer {
         margin-top: 27.5vw;
     }
 }
+
 @media only screen and (min-width: 1020px) and (max-width: 1119px) {
     .contenedorTexto {
         margin-top: 6vw;
     }
+
     .contenedorVideo {
         margin-top: 25vw;
     }
+
     footer {
         margin-top: 27.5vw;
     }
 }
+
 @media only screen and (min-width: 1120px) and (max-width: 1219px) {
     .contenedorTexto {
         margin-top: 6vw;
     }
+
     .contenedorVideo {
         margin-top: 27vw;
     }
+
     footer {
         margin-top: 28vw;
     }
 }
+
 @media only screen and (min-width: 1220px) and (max-width: 1319px) {
     .contenedorTexto {
         zoom: 1;
         margin-top: 6.8vw;
     }
+
     .contenedorVideo {
         margin-top: 26vw;
     }
+
     footer {
         margin-top: 28.5vw;
     }
 }
+
 @media only screen and (min-width: 1320px) and (max-width: 1519px) {
     .contenedorTexto {
         zoom: 1.1;
         margin-top: 6.5vw;
     }
+
     .contenedorVideo {
         margin-top: 26.5vw;
     }
+
     footer {
         margin-top: 28.5vw;
     }
 }
+
 @media only screen and (min-width: 1520px) and (max-width: 1719px) {
     .contenedorTexto {
         zoom: 1.2;
         margin-top: 6vw;
     }
+
     .contenedorVideo {
         margin-top: 27vw;
     }
+
     footer {
         margin-top: 28.5vw;
     }
 }
+
 @media only screen and (min-width: 1720px) and (max-width: 1919px) {
     .contenedorTexto {
         zoom: 1.25;
         margin-top: 6vw;
     }
+
     .contenedorVideo {
         margin-top: 28vw;
     }
+
     footer {
         margin-top: 28.5vw;
     }
 }
+
 @media only screen and (min-width: 1920px) {
     .contenedorTexto {
         transform: scale(1.5);
         margin-top: 9vw;
     }
+
     footer {
         margin-top: 28.5vw;
     }
