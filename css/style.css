@@ -455,7 +455,8 @@ footer a {
     }
 
     #bgBottom {
-        top: 123vw;
+        top: unset;
+        bottom: 0;
     }
 
     #bgEdificio1 {
@@ -477,6 +478,9 @@ footer a {
 
     #liMetaMask {
         margin-bottom: 30px;
+    }
+    main {
+        height: 100vh;
     }
 }
 
