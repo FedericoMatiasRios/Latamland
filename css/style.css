@@ -428,7 +428,7 @@ footer a {
         position: absolute;
         top: 28vw;
         background-color: #1593b3;
-        height: calc((var(--vh, 1vh) * 100) - 100px);
+        height: calc((var(--vh, 1vh) * 100) - 57.5vw);
         text-align: center;
         z-index: 1;
     }
@@ -479,7 +479,8 @@ footer a {
     }
 
     #liMetaMask {
-        margin: 1em;
+        position: absolute;
+        bottom: 50px;
     }
     main {
         height: unset;
