@@ -6,9 +6,13 @@
 }
 
 body {
-    background-color: #1593b3;
+    background-image: linear-gradient(#1593b3, #1593b3, #a66f42);
     overflow-x: hidden;
+    margin-top: 21.3px;
+    position: relative;
+    background-repeat: no-repeat;
 }
+
 
 nav {
     display: flex;
@@ -85,6 +89,10 @@ ul li:hover a {
     color: #fff;
     background-color: #05565b;
     font-weight: 700;
+}
+
+main {
+    height: 145.5vw;
 }
 
 .titulo {
@@ -209,7 +217,10 @@ h3 {
 }
 
 footer {
-    margin-top: 20vw;
+    margin-top: unset !important;
+    position: absolute !important;
+    width: 100vw !important;
+    bottom: 2vw !important;
 }
 
 footer i {
@@ -225,7 +236,7 @@ footer a {
 /* Media Queries */
 @media only screen and (min-width: 300px) and (max-width: 320px) {
     .contenedorVideo {
-        margin-top: 34.5vw;
+        margin-top: 32.5vw;
     }
 
     .contenedorTexto {
@@ -235,7 +246,7 @@ footer a {
 
 @media only screen and (min-width: 321px) and (max-width: 339px) {
     .contenedorVideo {
-        margin-top: 36vw;
+        margin-top: 34vw;
     }
 
     .contenedorTexto {
@@ -245,7 +256,7 @@ footer a {
 
 @media only screen and (min-width: 340px) and (max-width: 354px) {
     .contenedorVideo {
-        margin-top: 30vw;
+        margin-top: 28vw;
     }
 
     .contenedorTexto {
@@ -255,7 +266,7 @@ footer a {
 
 @media only screen and (min-width: 355px) and (max-width: 359px) {
     .contenedorVideo {
-        margin-top: 31vw;
+        margin-top: 29vw;
     }
 
     .contenedorTexto {
@@ -265,7 +276,7 @@ footer a {
 
 @media only screen and (min-width: 360px) and (max-width: 384px) {
     .contenedorVideo {
-        margin-top: 32vw;
+        margin-top: 30vw;
     }
 
     .contenedorTexto {
@@ -275,7 +286,7 @@ footer a {
 
 @media only screen and (min-width: 385px) and (max-width: 395px) {
     .contenedorVideo {
-        margin-top: 33vw;
+        margin-top: 31vw;
     }
 
     .contenedorTexto {
@@ -285,7 +296,7 @@ footer a {
 
 @media only screen and (min-width: 396px) and (max-width: 413px) {
     .contenedorVideo {
-        margin-top: 34vw;
+        margin-top: 32vw;
     }
 
     .contenedorTexto {
@@ -295,7 +306,7 @@ footer a {
 
 @media only screen and (min-width: 414px) and (max-width: 445px) {
     .contenedorVideo {
-        margin-top: 35vw;
+        margin-top: 33vw;
     }
 
     .contenedorTexto {
@@ -305,7 +316,7 @@ footer a {
 
 @media only screen and (min-width: 446px) and (max-width: 465px) {
     .contenedorVideo {
-        margin-top: 36vw;
+        margin-top: 34vw;
     }
 
     .contenedorTexto {
@@ -315,7 +326,7 @@ footer a {
 
 @media only screen and (min-width: 466px) and (max-width: 485px) {
     .contenedorVideo {
-        margin-top: 37vw;
+        margin-top: 35vw;
     }
 
     .contenedorTexto {
@@ -325,7 +336,7 @@ footer a {
 
 @media only screen and (min-width: 486px) and (max-width: 510px) {
     .contenedorVideo {
-        margin-top: 38vw;
+        margin-top: 36vw;
     }
 
     .contenedorTexto {
@@ -335,7 +346,7 @@ footer a {
 
 @media only screen and (min-width: 511px) and (max-width: 530px) {
     .contenedorVideo {
-        margin-top: 36vw;
+        margin-top: 34vw;
     }
 
     .contenedorTexto {
@@ -345,7 +356,7 @@ footer a {
 
 @media only screen and (min-width: 531px) and (max-width: 555px) {
     .contenedorVideo {
-        margin-top: 37vw;
+        margin-top: 35vw;
     }
 
     .contenedorTexto {
@@ -355,7 +366,7 @@ footer a {
 
 @media only screen and (min-width: 556px) and (max-width: 610px) {
     .contenedorVideo {
-        margin-top: 37.5vw;
+        margin-top: 35.5vw;
     }
 
     .contenedorTexto {
@@ -365,7 +376,7 @@ footer a {
 
 @media only screen and (min-width: 611px) and (max-width: 650px) {
     .contenedorVideo {
-        margin-top: 37.5vw;
+        margin-top: 35.5vw;
     }
 
     .contenedorTexto {
@@ -375,7 +386,7 @@ footer a {
 
 @media only screen and (min-width: 651px) and (max-width: 700px) {
     .contenedorVideo {
-        margin-top: 38vw;
+        margin-top: 36vw;
     }
 
     .contenedorTexto {
@@ -385,11 +396,14 @@ footer a {
 
 @media only screen and (min-width: 701px) and (max-width: 749px) {
     .contenedorVideo {
-        margin-top: 38.5vw;
+        margin-top: 36.5vw;
     }
 
     .contenedorTexto {
         zoom: 0.8;
+    }
+    footer {
+        margin-top: 24vw;
     }
 }
 
@@ -404,10 +418,8 @@ footer a {
     }
 
     footer {
-        margin-top: 15vw;
         font-size: 2vw;
     }
-
     #menu {
         display: none;
         flex-direction: column;
@@ -430,6 +442,7 @@ footer a {
     #logo {
         width: 50%;
         margin: 0 auto;
+        margin-top: -5vw;
     }
 
     #bgCenter1 {
@@ -452,10 +465,6 @@ footer a {
         top: 40vw;
     }
 
-    footer {
-        margin-top: 26vw;
-    }
-
     #hamburguer {
         display: block;
     }
@@ -473,6 +482,12 @@ footer a {
 @media only screen and (min-width: 750px) {
     #menu {
         display: flex !important;
+    }
+    main {
+        height: 125.5vw;
+    }
+    footer {
+        font-size: 2vw;
     }
 }
 
