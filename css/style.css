@@ -251,12 +251,12 @@ footer a {
     }
 
     .contenedorTexto {
-        top: 28vw;
+        top: 28.5vw;
     }
 
     .titulo {
-        font-size: 4.6vw;
-        width: 34vw;
+        font-size: 5.6vw;
+        width: 41vw;
     }
 
     h2 {
@@ -272,12 +272,14 @@ footer a {
     #bgEdificio1 {
         top: unset;
         bottom: 43vw;
-        left: -20px;
+        left: -10.8vw;
     }
 
     #bgEdificio2 {
         top: unset;
         bottom: 59vw;
+        left: 58vw;
+        background-position: 10vw;
     }
 
     #bgCenter1 {
