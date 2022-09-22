@@ -224,7 +224,7 @@ footer {
     margin-top: unset !important;
     position: absolute !important;
     width: 100vw !important;
-    bottom: -2vw !important;
+    bottom: -2vw;
 }
 
 footer i {
@@ -424,6 +424,7 @@ footer a {
 
     footer {
         font-size: 1vw;
+        bottom: 3.2vw;
     }
 
     #menu {
@@ -486,6 +487,7 @@ footer a {
     #liMetaMask {
         position: absolute;
         bottom: 50px;
+        font-size: 6vw;
     }
     main {
         height: unset;
