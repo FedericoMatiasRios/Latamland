@@ -16,14 +16,15 @@ body {
 nav {
     display: flex;
     align-items: center;
-    font-size: 1vw;
-    font-weight: 600;
+    font-size: 1.05vw;
+    font-weight: 500;
     margin-top: -23px;
 }
 
 #logo {
     width: 23em;
     cursor: pointer;
+    margin-top: -1.5em;
 }
 
 ul {
@@ -39,10 +40,10 @@ ul a {
 
 ul li {
     padding: 0.5em 1.5em;
-    margin: 0 0.5em;
+    margin: 0 0.3em;
     list-style-type: none;
     background-color: #fff;
-    border-radius: 2em;
+    border-radius: 1.5em;
     color: #276d72;
     cursor: pointer;
 }
@@ -81,13 +82,15 @@ ul li:hover a {
 }
 
 #liMetaMask {
-    padding: 0.5em 1.5em;
+    padding: 0.3em 1.6em;
     margin: 0 0.5em;
     cursor: pointer;
-    border-radius: 2em;
+    border-radius: 1.3em;
     color: #fff;
     background-color: #05565b;
     font-weight: 700;
+    font-size: 1.33vw;
+    line-height: 1.15em;
 }
 
 main {
@@ -123,10 +126,10 @@ main {
 }
 
 #bgEdificio1 {
-    width: 37vw;
+    width: 42vw;
     position: absolute;
-    top: 10vw;
-    left: -20px;
+    top: 5vw;
+    left: -35px;
     z-index: -3;
     background-image: url(../img/web-latamland-modificado-06.webp);
     height: 100vw;
@@ -135,10 +138,10 @@ main {
 }
 
 #bgEdificio2 {
-    width: 37vw;
+    width: 42vw;
     position: absolute;
-    top: 12vw;
-    left: 62vw;
+    top: 5vw;
+    left: 59.3vw;
     z-index: -1;
     background-image: url(../img/web-latamland-modificado-07.webp);
     height: 100vw;
@@ -149,7 +152,7 @@ main {
 #bgCenter1 {
     width: 100vw;
     position: absolute;
-    top: 20vw;
+    top: 19.5vw;
     left: 0;
     z-index: -1;
     background-image: url(../img/web-latamland-modificado-04.webp);
@@ -161,7 +164,7 @@ main {
 #bgCenter2 {
     width: 100vw;
     position: absolute;
-    top: 40vw;
+    top: 37.5vw;
     left: 0;
     z-index: -2;
     background-image: url(../img/web-latamland-modificado-02.webp);
@@ -183,20 +186,22 @@ main {
 }
 
 h1 {
-    font-size: 36px;
-    font-weight: 700;
-    width: 60%;
+    font-size: 3em;
+    font-weight: 800;
+    width: 80%;
     margin: 0 auto;
+    line-height: 1.1em;
 }
 
 h2 {
     margin-top: 10px;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
+    line-height: 1.5em;
 }
 
 h3 {
-    margin-top: 15vw;
+    margin-top: 14vw;
 }
 
 .contenedorTexto {
@@ -219,11 +224,11 @@ footer {
     margin-top: unset !important;
     position: absolute !important;
     width: 100vw !important;
-    bottom: 2vw !important;
+    bottom: -2vw !important;
 }
 
 footer i {
-    padding: 0 0.3em;
+    padding: 0 0.2em;
     cursor: pointer;
 }
 
@@ -418,7 +423,7 @@ footer a {
     }
 
     footer {
-        font-size: 2vw;
+        font-size: 1vw;
     }
 
     #menu {
@@ -500,7 +505,7 @@ footer a {
     }
 
     footer {
-        font-size: 2vw;
+        font-size: 1vw;
     }
 }
 
@@ -620,7 +625,7 @@ footer a {
 @media only screen and (min-width: 1320px) and (max-width: 1519px) {
     .contenedorTexto {
         zoom: 1.1;
-        margin-top: 6.5vw;
+        margin-top: 2.2vw;
     }
 
     .contenedorVideo {
